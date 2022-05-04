@@ -97,6 +97,8 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--letter-color-2);
     transition: var(--transition);
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .btn:hover {
