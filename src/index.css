@@ -12,11 +12,13 @@
 
 :root{
     --bg-color: rgb(35, 36, 38);
-    --bg-color-2: #30465cbb;
-    --letter-color: #4db5ff;
+    --bg-color-2: #273849bb;
+    --letter-color: #00c3c3;
     --letter-color-2: rgb(77, 181, 255, 0.4);
     --color-white: #ffff;
     --color-light: rgba(255,255,255,0.6);
+    --color-accent:rgb(221, 124, 44); 
+    --color-accent-2:rgba(214, 13, 13, 0.753);
 
     --container-width-large: 75%;
     --container-width-medium: 86%;
@@ -57,7 +59,13 @@ h5{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+h5{
+    font-size: 1.5rem;
 }
 
 section{
@@ -137,4 +145,5 @@ img {
     section > h2{ 
         margin-bottom: 2rem;
     }
+
 }

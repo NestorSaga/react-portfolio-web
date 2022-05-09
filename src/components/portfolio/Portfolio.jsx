@@ -2,7 +2,7 @@ import React, { useEffect} from 'react'
 import './portfolio.css'
 import IMG from '../../assets/IMG.jpg'
 import PortfolioOptions from './PortfolioOptions';
-import {projects, gameJams} from '../../data'
+import {projects, gameJams, games} from '../../data'
 import { useState } from 'react';
 
 
@@ -16,8 +16,8 @@ function Portfolio() {
 
   const options = [
     {
-      id:'gameJams',
-      title:'GameJams'
+      id:'games',
+      title:'Games'
     },
     {
       id:'projects',
@@ -31,11 +31,11 @@ function Portfolio() {
         case "projects":
             setData(projects);
             break;
-        case "gameJams":
-            setData(gameJams);
+        case "games":
+            setData(games);
             break;
         default:
-            setData(projects);
+            setData(games);
             break;
     }
 
@@ -61,6 +61,20 @@ function Portfolio() {
               </div>
               <h3>{data.title}</h3>
               <h4>{data.desc}</h4>
+              <div className='details__container'>
+                <div><strong>Role:</strong>{data.role}</div>
+                <div><strong>Platform:</strong>{data.platform}</div>
+                <div><strong>Engine:</strong>{data.engine}</div>
+
+              </div>
+              <div classname='container tags__container'>
+                {
+                  data.tags.map((tag) =>{
+                    return <div className='tags__tag'>{tag}</div>
+                  })
+                }
+                
+              </div>
               <div className="portfolio__item-cta">
                 <a href={data.link} className='btn' target='_blank'>Details</a>
               </div>  

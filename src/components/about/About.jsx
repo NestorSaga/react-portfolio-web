@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
 import './about.css'
 import ME from '../../assets/ME.png'
+import CAT from '../../assets/catalan.png'
+import ESP from '../../assets/español.png'
+import ENG from '../../assets/english.png'
+import JAP from '../../assets/japanese.png'
 
-function about() {
+function About() {
+
+
+  const [buttonText, setButtonText] = useState("Let's Talk");
+
   return (
     <section id='about'>
       
-      <h5>sisoy</h5>
-      <h2>jaja</h2>
+      <h5>Get to know</h5>
+      <h2>About me</h2>
       
       <div className='container about__container'>
         <div className="about__me">
@@ -17,20 +26,50 @@ function about() {
         </div>
 
         <div className='about__content'>
-          <div className="about__cards">
+          
+          <p>
+          Hi! My name is Néstor Sánchez and im a Computer Science Engineer and an aspiring Technical Game Designer living in Barcelona, Spain.
+          I'm a soon-to-be graduated in a double Bachelor's Degree in Compuer Science Engineering and Design and Production of Video Games. <br /> <br />
+
+          This broad but strong arrange of skills lets me act as a bridge between game design and game programming. To ensure this, critical thinking and good
+          communication skills are key to polish whatever idea is created or system implemented in order to keep the process going agile and smoothly. <br /> <br />
+
+          Making mine or my team's ideas and mechanics into a reality has been my passion since I started coding. As someone who is always thinking about how stuff
+          works and how it could be improved I've felt like home in the game development world, and I'm always avid to learn new stuff.
+          </p>
+
+          <div className='about__langtitle'>
+            <h3>I speak</h3>
             <div className="about__cards">
+              <article className="about__card" onMouseEnter={() => setButtonText('Parlem')}>
+                <img className='about__icon' src={CAT} alt="Languaje_Image" />
+                <h4>Native</h4>
+              </article>
+
+              <article className="about__card" onMouseEnter={() => setButtonText('Hablemos')}>
+                <img className='about__icon' src={ESP} alt="Languaje_Image" />
+                <h4>Native</h4>
+              </article>
+
+              <article className="about__card" onMouseEnter={() => setButtonText("Let's talk")}>
+                <img className='about__icon' src={ENG} alt="Languaje_Image" />
+                <h4>C1</h4>
+              </article>
+
+              <article className="about__card" onMouseEnter={() => setButtonText("話しましょう")}>
+                <img className='about__icon' src={JAP} alt="Languaje_Image" />
+                <h4>N4</h4>
+              </article>
 
             </div>
-          </div>
-          <p>
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo
-          </p>
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+              <div className='about__item-cta'>
+              <a href="#contact" className='btn btn__about'>{buttonText}</a>
+              </div> 
+          </div>      
         </div>
       </div>
-
     </section>
   )
 }
 
-export default about
+export default About

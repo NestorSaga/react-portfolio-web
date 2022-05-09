@@ -25,10 +25,10 @@ footer a {
     margin: 0 auto 3rem;
 }
 
-.footer__sociales {
+.footer__socials {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 4rem;
 }
 
