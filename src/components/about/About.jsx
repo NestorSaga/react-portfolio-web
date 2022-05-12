@@ -4,7 +4,7 @@ import './about.css'
 import ME from '../../assets/ME.png'
 import CAT from '../../assets/catalan.png'
 import ESP from '../../assets/español.png'
-import ENG from '../../assets/english.png'
+import ENG from '../../assets/engflag2.png'
 import JAP from '../../assets/japanese.png'
 
 function About() {
