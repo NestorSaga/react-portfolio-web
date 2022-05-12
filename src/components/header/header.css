@@ -80,7 +80,12 @@ header {
         height: 100vh;
     }
 
+    .header__container {
+        padding-top: 5rem;
+    }
+
     .header__socials {
         display: none;
+        
     }
 }
