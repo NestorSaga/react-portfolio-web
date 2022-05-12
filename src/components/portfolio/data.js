@@ -15,7 +15,7 @@ export const projects = [
       },
       {
         id:2,
-        title: "Rol e.t.",
+        title: "Card System for Tabletop RPG",
         desc: "Card-based battle system for digital tabletop roleplaying campaings. Designed to be played on Tabletop Simulator",
         img: "https://drive.google.com/uc?id=1B2y32XXsf78_Z0gD-nb42awKv8QvJZ_n",
         link: "https://drive.google.com/uc?id=1vsGkLwzktBp0gQNw1KIf8nz2H1WJYsUm",
