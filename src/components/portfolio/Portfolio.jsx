@@ -2,15 +2,12 @@ import React, { useEffect} from 'react'
 import './portfolio.css'
 import IMG from '../../assets/IMG.jpg'
 import PortfolioOptions from './PortfolioOptions';
-import {projects, gameJams, games} from '../../data'
+import {projects, gameJams, games} from './data'
 import { useState } from 'react';
 
 
-
-
-
 function Portfolio() {
-  const[selected, setSelected] = useState("projects")
+  const[selected, setSelected] = useState("games")
   const[data, setData] = useState([])
 
 
@@ -28,12 +25,12 @@ function Portfolio() {
   useEffect(()=> {
 
     switch(selected){
-        case "projects":
-            setData(projects);
-            break;
         case "games":
             setData(games);
             break;
+        case "projects":
+            setData(projects);
+            break;      
         default:
             setData(games);
             break;
@@ -43,7 +40,6 @@ function Portfolio() {
 
   return (
     <section id='portfolio'>
-      <h5>My recent work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__options_top">

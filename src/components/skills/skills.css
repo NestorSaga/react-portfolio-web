@@ -71,6 +71,14 @@
     gap: 1rem;
 }
 
+.skills__details small{
+    color: #86dada;
+}
+
+.roles__names{
+    display: inline;
+}
+
 .skills__details-icon {
     margin-top: 6px;
     color: var(--letter-color);

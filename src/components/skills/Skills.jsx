@@ -24,7 +24,6 @@ import {GiCube} from 'react-icons/gi'
 const Skills = ()  => {
   return (
     <section id='skills'>
-      <h5>What skills I have</h5>
       <h2>My Skills</h2>
 
       <div className="container skills__container">

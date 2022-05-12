@@ -15,7 +15,6 @@ function About() {
   return (
     <section id='about'>
       
-      <h5>Get to know</h5>
       <h2>About me</h2>
       
       <div className='container about__container'>
@@ -28,26 +27,27 @@ function About() {
         <div className='about__content'>
           
           <p>
-          Hi! My name is Néstor Sánchez and im a Computer Science Engineer and an aspiring Technical Game Designer living in Barcelona, Spain.
-          I'm a soon-to-be graduated in a double Bachelor's Degree in Compuer Science Engineering and Design and Production of Video Games. <br /> <br />
+          Hi! My name is Néstor Sánchez and I'm a Software Engineer and an aspiring Technical Game Designer living in Barcelona, Spain.
+          I'm a soon-to-be graduated in a double Bachelor's Degree in Software Engineering + Design and Production of Video Games. <br /> <br />
 
           This broad but strong arrange of skills lets me act as a bridge between game design and game programming. To ensure this, critical thinking and good
-          communication skills are key to polish whatever idea is created or system implemented in order to keep the process going agile and smoothly. <br /> <br />
+          communication skills are key to polish any idea or system in order to keep the process agile and smooth, which are 2 strong points that I consider myself to fit in.<br /> <br />
 
-          Making mine or my team's ideas and mechanics into a reality has been my passion since I started coding. As someone who is always thinking about how stuff
-          works and how it could be improved I've felt like home in the game development world, and I'm always avid to learn new stuff.
+          Bringing the team's ideas and mechanics to reality has been my passion since I started coding. As someone who is always thinking about how everything
+          works and how it could be improved I found my home in the game development world, always avid to learn new stuff.
           </p>
 
           <div className='about__langtitle'>
             <h3>I speak</h3>
             <div className="about__cards">
-              <article className="about__card" onMouseEnter={() => setButtonText('Parlem')}>
-                <img className='about__icon' src={CAT} alt="Languaje_Image" />
+              
+              <article className="about__card" onMouseEnter={() => setButtonText('Hablemos')}>
+                <img className='about__icon' src={ESP} alt="Languaje_Image" />
                 <h4>Native</h4>
               </article>
 
-              <article className="about__card" onMouseEnter={() => setButtonText('Hablemos')}>
-                <img className='about__icon' src={ESP} alt="Languaje_Image" />
+              <article className="about__card" onMouseEnter={() => setButtonText('Parlem')}>
+                <img className='about__icon' src={CAT} alt="Languaje_Image" />
                 <h4>Native</h4>
               </article>
 

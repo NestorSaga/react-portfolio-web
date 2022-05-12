@@ -18,7 +18,7 @@ export const projects = [
         title: "Rol e.t.",
         desc: "Card-based battle system for digital tabletop roleplaying campaings. Designed to be played on Tabletop Simulator",
         img: "https://drive.google.com/uc?id=1B2y32XXsf78_Z0gD-nb42awKv8QvJZ_n",
-        link: "",
+        link: "https://drive.google.com/uc?id=1vsGkLwzktBp0gQNw1KIf8nz2H1WJYsUm",
         tags: ['Solo Project'],
         role: ' Game Designer',
         platform: ' PC',
