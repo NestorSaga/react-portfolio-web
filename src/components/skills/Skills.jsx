@@ -101,7 +101,7 @@ const Skills = ()  => {
               <DiMysql className ='skills__details-icon' />
               <div>
               <h4>MySQL</h4>
-              <small className='text-light'>Basic</small>
+              <small className='text-light'>Intermediate</small>
               </div>
             </article>
 
@@ -109,7 +109,7 @@ const Skills = ()  => {
               <SiDocker className ='skills__details-icon' />
               <div>
               <h4>Docker</h4>
-              <small className='text-light'>Intermediate</small>
+              <small className='text-light'>Basic</small>
               </div>
             </article>
             </div>
