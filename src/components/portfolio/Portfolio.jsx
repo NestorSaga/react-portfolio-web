@@ -45,7 +45,7 @@ function Portfolio() {
       <div className="container portfolio__options_top">
         {
           options.map(item=> ( 
-             <a href='#portfolio' className='btn'><PortfolioOptions title = {item.title} active = {selected === item.id} setSelected = {setSelected} id = {item.id} /></a> 
+             <a href='#portfolio' className={selected === item.id ? 'btn__portfolio__selected' : 'btn__portfolio' }><PortfolioOptions title = {item.title} active = {selected === item.id} setSelected = {setSelected} id = {item.id} /></a> 
           ))}           
       </div>
       <div className='container portfolio__container'>
@@ -58,9 +58,12 @@ function Portfolio() {
               <h3>{data.title}</h3>
               <h4>{data.desc}</h4>
               <div className='details__container'>
-                <div><strong>Role:</strong>{data.role}</div>
-                <div><strong>Platform:</strong>{data.platform}</div>
-                <div><strong>Engine:</strong>{data.engine}</div>
+                <div><strong>Role:</strong></div>
+                <div><strong>Platform:</strong></div>
+                <div><strong>Engine:</strong></div>
+                <div>{data.role}</div>
+                <div>{data.platform}</div>
+                <div>{data.engine}</div>
 
               </div>
               <div classname='container tags__container'>

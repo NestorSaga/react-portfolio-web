@@ -9,6 +9,47 @@
     justify-content: center;  
 }
 
+
+.btn__portfolio{
+    width: max-content;
+    display: inline-block;
+    color: var(--letter-color);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--letter-color-2);
+    transition: var(--transition);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.btn__portfolio:hover {
+    background-color: white;
+    color: var(--bg-color);
+    border-color: transparent;
+}
+
+.btn__portfolio__selected{
+    width: max-content;
+    display: inline-block;
+    color: var(--bg-color);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--letter-color-2);
+    transition: var(--transition);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-color: transparent;
+    background-color: white;
+}
+.btn__portfolio__selected:hover{
+
+    color: var(--bg-color);
+
+}
+
+
+
 .portfolio__container {
     transition: var(--transition);
     display: grid;

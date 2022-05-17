@@ -67,7 +67,7 @@ export const games = [
         img: "https://drive.google.com/uc?id=1SVO8Ssda7aHXVuu8zomJwh_NmVdIAXrt",
         link: "https://nestorsaga.itch.io/sant-feliu-contra-el-diable",
         tags: ['Team Project', 'GameJam'],
-        role: ' 3D Artist/Designer/Programmer',
+        role: ' 3DArtist/Designer/Programmer',
         platform: ' PC',
         engine: ' Unity'
       },
