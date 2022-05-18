@@ -82,6 +82,7 @@
 .skills__details-icon {
     margin-top: 6px;
     color: var(--letter-color);
+    width: 1.5rem;
 }
 
 .text-light-2{
