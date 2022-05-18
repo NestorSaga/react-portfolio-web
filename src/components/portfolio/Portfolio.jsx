@@ -66,7 +66,7 @@ function Portfolio() {
                 <div>{data.engine}</div>
 
               </div>
-              <div classname='container tags__container'>
+              <div className='tags__container'>
                 {
                   data.tags.map((tag) =>{
                     return <div className='tags__tag'>{tag}</div>
