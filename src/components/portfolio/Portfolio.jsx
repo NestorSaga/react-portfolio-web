@@ -19,7 +19,8 @@ function Portfolio() {
     {
       id:'projects',
       title:'Projects'
-    }
+    },
+    
   ]
 
   useEffect(()=> {
