@@ -14,6 +14,7 @@ import {SiDocker} from 'react-icons/si'
 import {DiMysql} from 'react-icons/di'
 
 import {SiUnrealengine} from 'react-icons/si'
+import {SiBlender} from 'react-icons/si'
 import {SiUnity} from 'react-icons/si'
 import {SiVisualstudio} from 'react-icons/si'
 import {FaGithub} from 'react-icons/fa'
@@ -195,6 +196,14 @@ const Skills = ()  => {
               <div>
               <h4>3DS MAX</h4>
               <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+
+            <article className="skills__details">
+              <SiBlender className ='skills__details-icon' />
+              <div>
+              <h4>Blender</h4>
+              <small className='text-light'>Basic</small>
               </div>
             </article>
 
