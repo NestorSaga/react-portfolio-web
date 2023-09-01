@@ -59,14 +59,6 @@ const Skills = ()  => {
             </article>
 
             <article className="skills__details">
-              <DiAndroid className ='skills__details-icon' />
-              <div>
-              <h4>Android</h4>
-              <small className='text-light'>Basic</small>
-              </div>
-            </article>
-
-            <article className="skills__details">
               <SiPython className ='skills__details-icon' />
               <div>
               <h4>Python</h4>
@@ -101,7 +93,7 @@ const Skills = ()  => {
             <article className="skills__details">
               <DiMysql className ='skills__details-icon' />
               <div>
-              <h4>MySQL</h4>
+              <h4>SQL</h4>
               <small className='text-light'>Intermediate</small>
               </div>
             </article>
