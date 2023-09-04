@@ -9,9 +9,20 @@ export const projects = [
         img: "https://drive.google.com/uc?id=1qOwJnBZNmFVJSbLgKI2sRCGBZolLfgQr",
         link: "https://github.com/NestorSaga/KidneyApp",
         tags: ['Team Project'],
-        role: ' UI Desig/Systems Design/Code',
+        role: ' UI Design/Systems Design/Code',
         platform: ' Android & IOs',
         engine: ' Unity, NodeJS & MongoDB'
+      },
+      {
+        id:2,
+        title: "AR IOs App",
+        desc: "Pacient-focused app with eye tracking using ARKit. Developed for medical research in collaboration with BrainGaze and University of Barcelona",
+        img: "https://drive.google.com/uc?id=1kVR1y2gdfN8IlXZKDS6wX3VVcwNR6Xek",
+        link: null,
+        tags: ['Solo Project/Company'],
+        role: ' UI Design/AR integration/Code',
+        platform: 'IOs',
+        engine: ' Unity'
       },
       {
         id:2,
