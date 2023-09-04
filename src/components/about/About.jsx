@@ -28,7 +28,7 @@ function About() {
           
           <p>
           Hi! My name is Néstor Sánchez and I'm a Software Engineer and an aspiring Technical Game Designer living in Barcelona, Spain.
-          I'm a double Bachelor's Degree in Software Engineering + Design and Production of Video Games graduate. <br /> <br />
+          I'm a double Bachelor's Degree in Software Engineering + Design and Production of Video Games graduate and currently working as a Software Developer. <br /> <br />
 
           This broad but strong arrange of skills lets me act as a bridge between game design and game programming. To ensure this, critical thinking and good
           communication skills are key to polish any idea or system in order to keep the process agile and smooth, which are 2 strong points that I consider myself to fit in.<br /> <br />
