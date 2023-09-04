@@ -52,7 +52,7 @@ input, textarea {
     background: transparent;
     border: 2px solid var(--letter-color-2);
     resize: none;
-    color: var(--color-white);
+    color: var(--letter-color);
 }
 
 /* media queries medium*/
