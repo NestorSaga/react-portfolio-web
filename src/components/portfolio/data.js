@@ -41,6 +41,18 @@ export const projects = [
 export const games = [
   {
     id:1,
+    title: "OrbitRush",
+    desc: "Singleplayer mobile speed focused platformer played only with one finger while running away from an exploding sun.",
+    img: "https://drive.google.com/uc?id=10bMJckHrwcon_tWAyz0GNtyV-8zXGiwe",
+    link: "https://nestorsaga.itch.io/game-mechamix-vol-i",
+    tags: ['Solo Project', 'Prototype'],
+    role: ' Code/Design/UI',
+    platform: ' Android/iOS',
+    engine: ' Unity',
+    isVideo: 'true'
+  },
+  {
+    id:2,
     title: "Game MechaMIX Vol. I",
     desc: "Singleplayer puzzle platformer that combines two game mechanics from different game franchises in one single level.",
     img: "https://drive.google.com/uc?id=10bMJckHrwcon_tWAyz0GNtyV-8zXGiwe",
@@ -48,10 +60,10 @@ export const games = [
     tags: ['Solo Project'],
     role: ' Code/Design/UI/3DArt',
     platform: ' PC',
-    engine: ' Unity'
+    engine: ' Unity',
   },  
   {
-      id:2,
+      id:3,
       title: "Dragon's Den",
       desc: "Singleplayer fantasy medieval investing simulator where you invest your way back to your world.",
       img: "https://drive.google.com/uc?id=1DpBgAj9kJ2CU7_0BZdAuZFiTyNCuSCzt",
@@ -62,7 +74,7 @@ export const games = [
       engine: ' Unity'
     },
     {
-      id:3,
+      id:4,
       title: "Will Will Will",
       desc: "2-player 2D fist fight for Will's will. Made for the 2022 Global Game Jam. Theme: Duality",
       img: "https://drive.google.com/uc?id=1VHXMMu8KmBfEn494pRJUqrT0ruHQYjhM",
@@ -73,7 +85,7 @@ export const games = [
       engine: ' Unity'    
     },
     {
-      id:4,
+      id:5,
       title: "El drac",
       desc: "2-player asymmetric battle between Sant Feliu's iconic characters. Made for the 2021 Power Up Sant Feliu de Llobregat Game Jam",
       img: "https://drive.google.com/uc?id=1SVO8Ssda7aHXVuu8zomJwh_NmVdIAXrt",
@@ -84,7 +96,7 @@ export const games = [
       engine: ' Unity'
     },
     {
-      id:5,
+      id:6,
       title: "CPlay",
       desc: "Puzzle platformer where you repair the scenario by 'reprogramming' it. Made for the 2020 Global Game Jam. Theme: Repair",
       img: "https://drive.google.com/uc?id=1pld2jwSmjkYH0o_uqs-mlKWif7AjBDnc",
@@ -95,7 +107,7 @@ export const games = [
       engine: ' Unity'
     },
     {
-        id:6,
+        id:7,
         title: "Project Gravit",
         desc: "First person action platformer set in a futuristic corporation facility. Repulse, atract and finish the enemies to seek your answers",
         img: "https://drive.google.com/uc?id=1fWiiXnoPnHUp1FNBQYAaFJA1CnqDtGPg",
@@ -106,7 +118,7 @@ export const games = [
         engine: ' Unity'
     },
     {
-        id:7,
+        id:8,
         title: "Schrö",
         desc: "Frenetic 2-player 2D cube-fighting trap-setting and timeline-splitting game. Made for the 2019 Granollers Game Jam",
         img: "https://drive.google.com/uc?id=1-H9b6PEvc5xE1-JnP1GpyfWNR_NmoP1f",

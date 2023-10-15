@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react'
+import YoutubeEmbed from "./YoutubeEmbed";
 import './portfolio.css'
 import IMG from '../../assets/IMG.jpg'
 import PortfolioOptions from './PortfolioOptions';
@@ -54,7 +55,10 @@ function Portfolio() {
           data.map(data=>(            
               <article key={data.id}className='portfolio__item'>
               <div className='portfolio__item-image'>
-                <img src={data.img} alt={data.title} />
+              {
+                  data.isVideo === 'true' ? <YoutubeEmbed embedId="prkS7DCh1mE" /> : <img src={data.img} alt={data.title} />
+              }
+                              
               </div>
               <h3>{data.title}</h3>
               <h4>{data.desc}</h4>
