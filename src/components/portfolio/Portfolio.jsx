@@ -53,36 +53,73 @@ function Portfolio() {
       <div className='container portfolio__container'>
         {
           data.map(data=>(            
-              <article key={data.id}className='portfolio__item'>
-              <div className='portfolio__item-image'>
-              {
-                  data.isVideo === 'true' ? <YoutubeEmbed embedId="prkS7DCh1mE" /> : <img src={data.img} alt={data.title} />
-              }
-                              
-              </div>
-              <h3>{data.title}</h3>
-              <h4>{data.desc}</h4>
-              <div className='details__container'>
-                <div><strong>Role:</strong></div>
-                <div><strong>Platform:</strong></div>
-                <div><strong>Engine:</strong></div>
-                <div>{data.role}</div>
-                <div>{data.platform}</div>
-                <div>{data.engine}</div>
-
-              </div>
-              <div className='tags__container'>
-                {
-                  data.tags.map((tag) =>{
-                    return <div className='tags__tag'>{tag}</div>
-                  })
-                }
-                
-              </div>
-              <div className="portfolio__item-cta">
-                <a href={data.link} className='btn' target='_blank'>Details</a>
-              </div>  
-        </article>
+              <article key={data.id} className={`portfolio__item${data.isBig ? ' portfolio__item--big' : ''}`}> 
+                {data.isBig ? (
+                  <>
+                    <div className='portfolio__item-image'>
+                      {data.isVideo === 'true' ? <YoutubeEmbed embedId={data.img} /> : <img src={data.img} alt={data.title} />}
+                    </div>
+                    <div className='portfolio__item-content'>
+                      <h3>{data.title}</h3>
+                      <h4>{data.desc}</h4>
+                      <div className='details__container'>
+                        <div><strong>Role:</strong></div>
+                        <div><strong>Platform:</strong></div>
+                        <div><strong>Engine:</strong></div>
+                        <div>{data.role}</div>
+                        <div>{data.platform}</div>
+                        <div>{data.engine}</div>
+                      </div>
+                      <div className='tags__container'>
+                        {data.tags.map((tag) => (
+                          <div className='tags__tag'>{tag}</div>
+                        ))}
+                      </div>
+                      <div className="portfolio__item-cta">
+                        <a 
+                          href={data.link || undefined}
+                          className={`btn${!data.link ? ' disabled' : ''}`}
+                          target='_blank'
+                          tabIndex={!data.link ? -1 : 0}
+                          aria-disabled={!data.link ? 'true' : 'false'}
+                          style={!data.link ? {pointerEvents: 'none', opacity: 0.5} : {}}
+                        >Details</a>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className='portfolio__item-image'>
+                      {data.isVideo === 'true' ? <YoutubeEmbed embedId="prkS7DCh1mE" /> : <img src={data.img} alt={data.title} />}
+                    </div>
+                    <h3>{data.title}</h3>
+                    <h4>{data.desc}</h4>
+                    <div className='details__container'>
+                      <div><strong>Role:</strong></div>
+                      <div><strong>Platform:</strong></div>
+                      <div><strong>Engine:</strong></div>
+                      <div>{data.role}</div>
+                      <div>{data.platform}</div>
+                      <div>{data.engine}</div>
+                    </div>
+                    <div className='tags__container'>
+                      {data.tags.map((tag) => (
+                        <div className='tags__tag'>{tag}</div>
+                      ))}
+                    </div>
+                    <div className="portfolio__item-cta">
+                      <a 
+                        href={data.link || undefined}
+                        className={`btn${!data.link ? ' disabled' : ''}`}
+                        target='_blank'
+                        tabIndex={!data.link ? -1 : 0}
+                        aria-disabled={!data.link ? 'true' : 'false'}
+                        style={!data.link ? {pointerEvents: 'none', opacity: 0.5} : {}}
+                      >Details</a>
+                    </div>
+                  </>
+                )}
+              </article>
             
           ))}
       </div>

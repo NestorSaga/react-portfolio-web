@@ -58,7 +58,7 @@ function About() {
 
               <article className="about__card" onMouseEnter={() => setButtonText("話しましょう")}>
                 <img className='about__icon' src={JAP} alt="Languaje_Image" />
-                <h4>N4</h4>
+                <h4>N3</h4>
               </article>
 
             </div>
