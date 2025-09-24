@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 import './about.css'
-import ME from '../../assets/ME.png'
-import CAT from '../../assets/catalan.png'
-import ESP from '../../assets/español.png'
-import ENG from '../../assets/engflag2.png'
-import JAP from '../../assets/japanese.png'
+import ME from '../../ME.png'
+import CAT from '../../catalan.png'
+
+import ESP from '../../español.png'
+import ENG from '../../engflag2.png'
+import JAP from '../../japanese.png'
 
 function About() {
 

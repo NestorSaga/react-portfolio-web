@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import YoutubeEmbed from "./YoutubeEmbed";
 import './portfolio.css'
-import IMG from '../../assets/IMG.jpg'
+import IMG from '../../IMG.jpg'
 import PortfolioOptions from './PortfolioOptions';
 import {projects, gameJams, games} from './data'
 import { useState } from 'react';
@@ -57,7 +57,7 @@ function Portfolio() {
                 {data.isBig ? (
                   <>
                     <div className='portfolio__item-image'>
-                      {data.isVideo === 'true' ? <YoutubeEmbed embedId={data.img} /> : <img src={data.img} alt={data.title} />}
+                      {data.isVideo === 'true' ? <YoutubeEmbed embedId={data.img} big /> : <img src={data.img} alt={data.title} />}
                     </div>
                     <div className='portfolio__item-content'>
                       <h3>{data.title}</h3>
@@ -78,11 +78,11 @@ function Portfolio() {
                       <div className="portfolio__item-cta">
                         <a 
                           href={data.link || undefined}
-                          className={`btn${!data.link ? ' disabled' : ''}`}
+                          className={`btn${(!data.link || !data.img) ? ' disabled' : ''}`}
                           target='_blank'
-                          tabIndex={!data.link ? -1 : 0}
-                          aria-disabled={!data.link ? 'true' : 'false'}
-                          style={!data.link ? {pointerEvents: 'none', opacity: 0.5} : {}}
+                          tabIndex={(!data.link || !data.img) ? -1 : 0}
+                          aria-disabled={(!data.link || !data.img) ? 'true' : 'false'}
+                          style={(!data.link || !data.img) ? {pointerEvents: 'none', opacity: 0.5} : {}} rel="noreferrer"
                         >Details</a>
                       </div>
                     </div>
@@ -90,7 +90,7 @@ function Portfolio() {
                 ) : (
                   <>
                     <div className='portfolio__item-image'>
-                      {data.isVideo === 'true' ? <YoutubeEmbed embedId="prkS7DCh1mE" /> : <img src={data.img} alt={data.title} />}
+                      {data.isVideo === 'true' ? <YoutubeEmbed embedId={data.img} /> : <img src={data.img} alt={data.title} />}
                     </div>
                     <h3>{data.title}</h3>
                     <h4>{data.desc}</h4>
@@ -110,11 +110,11 @@ function Portfolio() {
                     <div className="portfolio__item-cta">
                       <a 
                         href={data.link || undefined}
-                        className={`btn${!data.link ? ' disabled' : ''}`}
+                        className={`btn${(!data.link || !data.img) ? ' disabled' : ''}`}
                         target='_blank'
-                        tabIndex={!data.link ? -1 : 0}
-                        aria-disabled={!data.link ? 'true' : 'false'}
-                        style={!data.link ? {pointerEvents: 'none', opacity: 0.5} : {}}
+                        tabIndex={(!data.link || !data.img) ? -1 : 0}
+                        aria-disabled={(!data.link || !data.img) ? 'true' : 'false'}
+                        style={(!data.link || !data.img) ? {pointerEvents: 'none', opacity: 0.5} : {}} rel="noreferrer"
                       >Details</a>
                     </div>
                   </>
