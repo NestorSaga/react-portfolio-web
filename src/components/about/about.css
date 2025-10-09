@@ -80,6 +80,7 @@
 .about__icon{
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
+    border-radius: .5rem;
 }
 
 .about__card h5 {

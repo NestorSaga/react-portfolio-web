@@ -4,7 +4,7 @@ import {BsFillCheckCircleFill} from 'react-icons/bs'
 
 import {SiCsharp} from 'react-icons/si'
 import {DiJavascript} from 'react-icons/di'
-import {SiJava} from 'react-icons/si'
+import { FaJava } from "react-icons/fa";
 import {DiAndroid} from 'react-icons/di'
 import {SiPython} from 'react-icons/si'
 import {FaNodeJs} from 'react-icons/fa'
@@ -12,6 +12,7 @@ import {SiReact} from 'react-icons/si'
 import {SiMongodb} from 'react-icons/si'
 import {SiDocker} from 'react-icons/si'
 import {DiMysql} from 'react-icons/di'
+import {TbBrandCpp} from "react-icons/tb";
 
 import {SiUnrealengine} from 'react-icons/si'
 import {SiBlender} from 'react-icons/si'
@@ -35,7 +36,7 @@ const Skills = ()  => {
               <h3>Languages & Frameworks</h3>
             <div className='subskills__content'>              
             <article className="skills__details">
-              <SiJava className ='skills__details-icon' />
+              <FaJava className ='skills__details-icon' />
               <div>
                 <h4>Java</h4>
                 <small className='text-light'>Advanced</small>
@@ -105,8 +106,17 @@ const Skills = ()  => {
               <small className='text-light'>Basic</small>
               </div>
             </article>
+
+            <article className="skills__details">
+              <TbBrandCpp className ='skills__details-icon' />
+              <div>
+              <h4>C++</h4>
+              <small className='text-light'>Basic</small>
+              </div>
+            </article>
             </div>
             </div>
+
 
             <div className='skills__separator'></div>
 

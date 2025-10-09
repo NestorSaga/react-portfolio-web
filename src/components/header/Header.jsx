@@ -20,7 +20,7 @@ function Header() {
             delaySpeed={500}
             loop={1}/></h1>
             <h5 className="text-light"><Typewriter 
-            words = {["Software Engineer & Aspiring Technical Designer"]}
+            words = {["Technical Designer & Software Engineer "]}
             typeSpeed={40}
             delaySpeed={200}
             loop={1}/>
